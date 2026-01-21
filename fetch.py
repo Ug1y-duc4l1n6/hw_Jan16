@@ -16,14 +16,15 @@ conn.close()
 print(results_df['city'])'''
 
 cities = []
-character_list = []
-teams = []
+cities_length = []
+teams_length = []
 for result in results:
     cities.append(result[1])
-    character_list.append(len(result[1]))
-    teams.append(len(result[2]))
+    cities_length.append(len(result[1]))
+    teams_length.append(len(result[2]))
 
-
+combined_tuple = list(zip(cities_length, teams_length))
 print(cities)
-print(character_list)
-print(character_list + teams)
+print(cities_length)
+print(teams_length)
+print(combined_tuple)
