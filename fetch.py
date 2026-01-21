@@ -21,7 +21,9 @@ teams = []
 for result in results:
     cities.append(result[1])
     character_list.append(len(result[1]))
+    teams.append(len(result[2]))
 
 
 print(cities)
 print(character_list)
+print(character_list + teams)
